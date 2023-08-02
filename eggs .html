@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+       <title>Eth Eggs</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://drive.google.com/uc?id=18w8jIddqT1V5IkRthds_bkggMmidmndq">
+</head>
+
+
+
+<body>
+             <div class="banner">
+              <div class="navbar">
+                <a href="#" onclick="location.reload(); return false;">
+                    <img src="Title1.png" class="logo">
+                  </a>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#mint-details-section">Mint Details</a></li>
+         </ul>
+             </div>
+
+    <div class="egg">
+      <img src="egg.png" alt="image of white egg" class="custom-image">
+              </div>
+             </div>
+
+
+  <div id="mint-details-section" class="banner2">
+    <!-- Your content for the Mint Details section goes here -->
+   
+ 
+     <script>
+         document.addEventListener("DOMContentLoaded", function() {
+           var mintDetailsLink = document.querySelector('a[href="#mint-details-section"]');
+             var mintDetailsSection = document.getElementById('mint-details-section');
+
+               mintDetailsLink.addEventListener("click", function(event) {
+                event.preventDefault();
+              mintDetailsSection.scrollIntoView({ behavior: "smooth" });
+                  });
+                });
+      </script>
+  </div>
+      
+</body>
+
+
+</html>
